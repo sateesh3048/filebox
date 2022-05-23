@@ -1,5 +1,5 @@
 class DocumentsController < ApplicationController
-  before_action :require_login
+  before_action :require_login, except: :shared_document
 
   def index
     @documents = current_user.documents.with_attached_file
