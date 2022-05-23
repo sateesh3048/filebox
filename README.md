@@ -13,3 +13,7 @@ Step 2: Set up database
 You are ready to use this project
 
 Demo About Screens used in this project
+
+1) Registration page 
+
+![Alt text](/blob/main/public/screenshots/sign_up_page.png?raw=true "Title")
