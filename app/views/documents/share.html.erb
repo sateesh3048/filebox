@@ -1,0 +1,15 @@
+<div class="row mt-4">
+  <div class="col-sm-12 text-center">
+    <h3>Document Share Path</h3>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-sm-12 text-center">
+    <p> Your shorten url is <strong><%= short_url(@document.short_url) %></strong> </p>
+  </div>
+</div>
+<div class="row mt-4">
+  <div class="col-sm-12">
+    Go back to   <%= link_to "Documents", documents_path, class: "btn btn-info" %>
+  </div>
+</div>

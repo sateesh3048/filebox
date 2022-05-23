@@ -1,0 +1,31 @@
+<% if @document.present? %>
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <h3 class="text-center">File Details</h3>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-4">Title</div>
+    <div class="col-sm-4"><%= @document.title%></div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-4">Description</div>
+    <div class="col-sm-8"><%= @document.description%></div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <h4>To download document please click here  <%= link_to @document.title, rails_blob_path(@document.file, disposition: 'attachment') %></h4>
+    </div>
+  </div>
+<% else %>
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <p> Sorry we have not found given url. Please try with valid url <%= short_url(@short_url) %> </p>
+    </div>
+  </div>
+<% end %>
+<div class="row mt-4">
+  <div class="col-sm-12">
+    Go back to   <%= link_to "Documents", documents_path, class: "btn btn-info" %>
+  </div>
+</div>

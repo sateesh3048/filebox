@@ -1,0 +1,5 @@
+<% if current_user.confirmed? %>
+  <%= render 'file_list' %>
+<% else %>
+  <%= render 'users/confirmations/confirm_user' %>
+<% end %>
