@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Step 1 :- clone this project
 
-Things you may want to cover:
+git clone https://github.com/sateesh3048/filebox.git
 
-* Ruby version
+Step 2: Set up database
 
-* System dependencies
+1) rails db:create
 
-* Configuration
+2) rails db:migrate
 
-* Database creation
+You are ready to use this project
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
